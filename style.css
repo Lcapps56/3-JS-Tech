@@ -25,9 +25,12 @@ body{
     transform: translateX(-50%);
     transition: all 0.25s ease;
 }
-.popup .show{
+.popup.show {
     top: 0;
     visibility: visible;
+}
+.popup.online{
+    border-color: #23cc71
 }
 .popup .icon i{
     color: white;
@@ -40,6 +43,9 @@ body{
     justify-content: center;
     align-items: center;
     margin-right: 15px;
+}
+.popup.online .icon i{
+    background: #23cc71
 }
 .popup .title{
     font-size: 1.2rem;
@@ -59,4 +65,8 @@ body{
     border-radius: 4px;
     cursor: pointer;
     font-weight: 500;
+}
+.popup.online .reconnect{
+    background: #bfbfbf;
+    pointer-events: none;;
 }
