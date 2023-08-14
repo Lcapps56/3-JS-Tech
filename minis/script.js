@@ -126,13 +126,13 @@
 
 
 
-function addArray(arr){
-    let sum = 0
-    arr.forEach(num => {
-        sum = sum+num
-    });
-    return sum
-}
+// function addArray(arr){
+//     let sum = 0
+//     arr.forEach(num => {
+//         sum = sum+num
+//     });
+//     return sum
+// }
 
-console.log(addArray([1, 1, 1, 1]))
-console.log(addArray([1, 2, 3, 4, 5]))
+// console.log(addArray([1, 1, 1, 1]))
+// console.log(addArray([1, 2, 3, 4, 5]))
