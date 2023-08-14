@@ -98,25 +98,41 @@
 
 
 
-function isUnique(str){
-    // turn str into an array
-    let check1 = str.split('')
-    // duplicate array
-    let check2 = [...check1]
-    // loop through one array 
-    for(let i=0; i<check1.length; i++){
-        if(check2.includes(check1[i], i+1)){
-            return 'this is not a unique set'
-        }else{
-            return 'this is a unique set'
-        }
-    }
+// function isUnique(str){
+//     // turn str into an array
+//     let check1 = str.split('')
+//     // duplicate array
+//     let check2 = [...check1]
+//     // loop through one array 
+//     for(let i=0; i<check1.length; i++){
+//         if(check2.includes(check1[i], i+1)){
+//             return 'this is not a unique set'
+//         }else{
+//             return 'this is a unique set'
+//         }
+//     }
 
+// }
+
+
+// // isUnique('abcde')
+
+
+// console.log(isUnique('everywhere I go, bitches always know'))
+// console.log(isUnique('the quick brwn fox jumpd  lazy dog'))
+
+
+// ______ Array SUM
+
+
+
+function addArray(arr){
+    let sum = 0
+    arr.forEach(num => {
+        sum = sum+num
+    });
+    return sum
 }
 
-
-// isUnique('abcde')
-
-
-console.log(isUnique('everywhere I go, bitches always know'))
-console.log(isUnique('the quick brwn fox jumpd  lazy dog'))
+console.log(addArray([1, 1, 1, 1]))
+console.log(addArray([1, 2, 3, 4, 5]))
