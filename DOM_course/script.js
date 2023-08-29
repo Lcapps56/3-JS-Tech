@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-
-
-
 const list = document.querySelector('#book-list ul')
 const addForm = document.querySelector('#add-book')
 const hideBox = document.querySelector("#hide")
